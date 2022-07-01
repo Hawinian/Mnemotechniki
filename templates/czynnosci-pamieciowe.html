@@ -1,0 +1,53 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "czynnosci_pamieciowe" %}
+{% block content %}
+
+<h3>Czynności pamięciowe</h3>
+
+<h5 id="zapamietywanie">Zapamiętywanie</h5>
+<p><em>Zapamiętywanie to czynność pamięciowa, polegająca na wprowadzeniu informacji do jednego z systemów pamięci. Wymaga zakodowania informacji i utrwaleniu zapisu.</em></p>
+
+<blockquote class="blockquote text-right">
+    <footer class="blockquote-footer">Edward Nęcka, Jarosław Orzechowski, Błażej Szymura <cite title="Source Title">Psychologia Poznawcza</cite></footer>
+</blockquote>
+
+<p>Zapamiętywanie inaczej nazywane kodowaniem to czynność pamięciowa polegająca na wprowadzeniu informacji do jednego z systemów pamięci. Wymaga zakodowania informacji i utrwalenia zapisu. Kodowanie to automatyczny proces tworzenia reprezentacji informacji w pamięci.</p>
+
+<p>Operacje kodowania to operacje polegające na zamianie bodźców, jakie do nas docierają, w ślady pamięciowe. Sposób kodowania informacji zależy od rodzaju pamięci, w której będą zapisane. Inaczej bowiem kodowane są informacje, które przechowuje się przez krótki okres, inaczej zaś te, które muszą być przechowywane bardzo długo.</p>
+
+<h5 id="przechowywanie">Przechowywanie</h5>
+<p><em>Przechowywanie jest czynnością pamięciową, która polega na przeciwdziałaniu zanikowi albo utracie dostępu do zapamiętanej informacji. W trakcie przechowywania zapisy pamięciowe mogą być rekodowane, co prowadzi do zmian w zakresie ich treści albo sposobu uporządkowania.</em></p>
+
+<blockquote class="blockquote text-right">
+    <footer class="blockquote-footer">Edward Nęcka, Jarosław Orzechowski, Błażej Szymura <cite title="Source Title">Psychologia Poznawcza</cite></footer>
+</blockquote>
+
+<p>Operacje przechowania informacji są częściowo wyznaczone przez sposoby kodowania informacji. Informacje przechowywane krótko w niewielkim stopniu zmieniają swoją treść, dokładność, czy też postać. Informacje przechowywane długo ulegają licznym zmianom - choćby dlatego, że mogą nakładać się na nie informacje, które odbieramy później. </p>
+
+<p>Przykładowo, poznając jakąś osobę dowiadujesz się o niej jedynie podstawowych informacji. Zapamiętujesz kolor włosów, usposobienie czy sposób mówienia. Z czasem zapisy Twojej pamięci o danej osobie powiększają się o nowe informacje, co powoduje modyfikację zapisów pamięciowych.</p>
+
+<h5 id="odpamietywanie">Odpamiętywanie</h5>
+<p><em>Odpamiętywaniem nazywamy czynność, polegającą na wykorzystaniu wcześniej zapamiętanych informacji. Może się dokonać poprzez odtworzenie (przypominanie), rozpoznawanie lub niejawny wpływ na zachowanie.</em></p>
+
+<blockquote class="blockquote text-right">
+    <footer class="blockquote-footer">Edward Nęcka, Jarosław Orzechowski, Błażej Szymura <cite title="Source Title">Psychologia Poznawcza</cite></footer>
+</blockquote>
+
+<p>Proces odpamiętywania sprawia nam najwięcej problemów. Często zdarza się, że nie mamy bezpośredniego dostępu do zapisanych informacji. Niezwykle przydatne wówczas stają <a href="{{url_for('mnemotechniki')}}">mnemotechniki</a>, które ułatwiają nam przypominanie sobie informacji.</p>
+
+<p>Dwa rodzaje odpamiętywania, to:</p>
+<ul>
+    <li><b>Przypominanie</b>, kiedy próbujemy przywołać bezpośrednio zapamiętane treści. </li>
+    <li><b>Rozpoznawanie</b>, kiedy możemy wskazać wśród przedstawionego materiału, co było przedmiotem zapamiętywania.</li>
+</ul>
+
+<p>Zapamiętany materiał możemy odtwarzać na trzy różne sposoby:</p>
+<ul>
+    <li>odtwarzanie swobodne - zapamiętany materiał odtwarzamy w dowolnej kolejności,</li>
+    <li>odtwarzanie w kolejności - zapamiętany materiał odtwarzamy zgodnie z kolejnością prezentowaną podczas zapamiętywania,</li>
+    <li>odtwarzanie ukierunkowane - odtwarzamy brakujący element zapamiętywanej treści, może to być na przykład para słowo-słowo (biurko-okno) czy też liczba-słowo (6-lustro).</li>
+</ul>
+
+
+{% endblock %}

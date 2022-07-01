@@ -1,0 +1,28 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie5" %}
+{% block content %}
+
+<h3>Ćwiczenie 5</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie z tworzenia skojarzeń</h5>
+</div>
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które ma Cię nauczyć tworzyć skojarzenia. Jest to umiejętność niezbędna do opanowania każdej mnemotechniki!</p>
+<p>Przykład:</p>
+
+<div class="row justify-content-center">
+    <img src="/static/images/dress.svg" class="img-fluid" alt="sukienka" id="zdjecie">
+    <img src="/static/images/cake.svg" class="img-fluid" alt="ciasto" id="zdjecie">
+</div>
+
+<p class="pt-3">Po przyciśnięciu przycisku Rozpocznij wyświetli Ci się lista dziesięciu par obrazków. Twoim zadaniem jest zapamiętanie jakie obrazki tworzą parę, ponieważ później będziesz musiał uzupełnić taką parę brakującym obrazkiem!</p>
+
+
+<div class="mt-5">
+    <a href="{{ url_for('cwiczenie5start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+
+{% endblock %}

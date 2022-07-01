@@ -1,0 +1,24 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie4" %}
+{% block content %}
+
+<h3>Ćwiczenie 4</h3>
+<ol>
+    <li>Grecja</li>
+    <li>Jemen</li>
+    <li>Norwegia</li>
+    <li>Bułgaria</li>
+    <li>Łotwa</li>
+    <li>Czechy</li>
+    <li>Madagaskar</li>
+    <li>Austria</li>
+    <li>Czarnogóra</li>
+    <li>Kanada</li>
+</ol>
+
+
+<a href="{{ url_for('cwiczenie4formularz') }}" class="btn btn-danger btn-lg btn-block" role="button">Podaj rozwiązanie</a>
+
+
+{% endblock %}

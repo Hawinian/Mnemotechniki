@@ -1,0 +1,21 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie8" %}
+{% block content %}
+
+<h3>Ćwiczenie 8</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie z metody liczbowo-kształtowej</h5>
+</div>
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które ma pomóc Ci opanować metodę liczbowo-kształtową. jeżeli nie wiesz na czym polega ta technika. Koniecznie przeczytaj artykuł o <a href="{{ url_for('liczby') }}">metodzie liczbowo-kształtowej</a>.</p>
+
+<p>Po przyciśnięciu przycisku Rozpocznij wyświetli Ci się dziesięciu numerów i wyrazów. Twoim zadaniem jest zapamiętanie pojęć w kolejności wyznaczonej przez numery. Później wypisz te słowa w odpowiedniej kolejności. Powodzenia! </p>
+
+
+<div class="mt-5">
+    <a href="{{ url_for('cwiczenie8start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+{% endblock %}

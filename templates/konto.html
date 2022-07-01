@@ -1,0 +1,49 @@
+{% extends 'baseg.html' %}
+{% set active_menu = "konto" %}
+{% set active_page = None %}
+{% block content %}
+
+<div class="row justify-content-center">
+    {% if session.role == 'admin' %}
+    <h1><a href="{{url_for('view')}}">Panel administracyjny</a></h1>
+    {% endif %}
+</div>
+
+
+
+{%  if twyniki %}
+<h3>Twoje wyniki:</h3>
+<div class="row justify-content-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Numer ćwiczenia</th>
+                    <th scope="col">Wynik</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            {% for item in twyniki %}
+            <tr scope="row">
+                <td>{{ item.exercise_id }}</td>
+                <td>{{ item.score }}</td>
+                <td>{{ item.date.strftime("%d.%m.%Y %H:%M") }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+</div>
+{%  else %}
+<div class="row justify-content-center">
+    <h3>Nie ukończyłeś jeszcze żadnego ćwiczenia</h3>
+</div>
+<div class="row justify-content-center">
+   <p> <a href="{{url_for('mnemotechniki')}}">Przejdź do tej części serwisu by ćwiczyć!</a></p>
+</div>
+
+{% endif %}
+
+
+
+{% endblock %}

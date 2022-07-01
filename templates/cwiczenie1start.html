@@ -1,0 +1,55 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie1" %}
+{% block content %}
+
+<h3>Ćwiczenie 1</h3>
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <th scope="row">4</th>
+            <td>książka</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>pływanie</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td colspan="2">ogród</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td colspan="2">klapek</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">kotek</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td colspan="2">myśliwiec</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td colspan="2">film krótkometrażowy</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td colspan="2">komputer</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td colspan="2">kuzyn</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td colspan="2">filozof</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="{{ url_for('cwiczenie1formularz') }}" class="btn btn-danger btn-lg btn-block" role="button">Przejdź do wpisywania</a>
+
+
+{% endblock %}

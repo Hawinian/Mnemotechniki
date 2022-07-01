@@ -1,0 +1,12 @@
+{% extends 'baseg.html' %}
+{% set active_menu = "konto" %}
+{% set active_page = None %}
+{% block content %}
+{% for item in valuesu %}
+    <p>Name: {{ item.name }} Login: {{ item.login }} Haslo: {{ item.password }}</p>
+    {% endfor %}
+
+    {% for item in valuesw %}
+    <p>Id: {{ item._id }} User_id: {{ item.user_id }} Exercise_id: {{ item.exercise_id }} Score: {{ item.score }} Data: {{ item.date }}</p>
+    {% endfor %}
+{% endblock %}

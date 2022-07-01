@@ -1,0 +1,29 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie7" %}
+{% block content %}
+
+<h3>Ćwiczenie 7</h3>
+<ol>
+    <li>żebro</li>
+    <li>architekt</li>
+    <li>bandyta</li>
+    <li>spadochron</li>
+    <li>mroźna zima</li>
+    <li>kodeks karny</li>
+    <li>łódź podwodna</li>
+    <li>kowboj</li>
+    <li>olej</li>
+    <li>zakonnica</li>
+    <li>lemoniada</li>
+    <li>robot</li>
+    <li>cyrk</li>
+    <li>przewodnik</li>
+    <li>kuzyn</li>
+</ol>
+
+
+<a href="{{ url_for('cwiczenie7formularz') }}" class="btn btn-danger btn-lg btn-block" role="button">Podaj rozwiązanie</a>
+
+
+{% endblock %}

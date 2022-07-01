@@ -1,0 +1,24 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie2" %}
+{% block content %}
+
+
+<h3>Ćwiczenie 2</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie wprowadzające do mnemotechnik</h5>
+</div>
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które jest wstępem do nauki mnemotechnik. Dzięki niemu sam przekonasz się jak dobra jest Twoja pamięć i czy masz nad czym pracować.</p>
+
+<p>Po przyciśnięciu przycisku Rozpocznij wyświetli Ci się historyjka. Niektóre ze słów w niej użytych będą pogrubione. Twoim zadaniem jest zapamiętanie właśnie tych słów. Pamiętaj jednak, by przeczytać całą historię tylko jeden raz! Podczas czytania spróbuj wyobrazić sobie przedstawioną historię. Zobacz czy obraz zapamiętasz lepiej niż słowo.</p>
+
+<p>Zapamiętane wyrazy podawaj w mianowniku liczby pojdeynczej lub mnogiej. Zależnie od tego ile było ich w historyjce.</p>
+
+<div class="mt-5">
+    <a href="{{ url_for('cwiczenie2start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+
+{% endblock %}

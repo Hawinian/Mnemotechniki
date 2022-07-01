@@ -1,0 +1,13 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie2" %}
+{% block content %}
+
+<h3>Ćwiczenie 2</h3>
+<p>Wyobraź sobie małą, skoczną <b>pchłę</b>. Jest tak drobna, że niezauważenie wskoczyła Ci do paczki <b>papierosów</b>. Nie wiedząc o jej istnieniu wyszedłeś na spacer. Była piękna pogoda, świeciło słońce, śpiewały ptaszki. Oślepiały Cię promienie słoneczne, dlatego zdecydowałeś się założyć <b>okulary</b> słoneczne. Spacer upłynął Ci bardzo miło, ale niezwykle Cię zmęczył. Zacząłeś marzyć tylko o tym, by wreszcie zjeść jakieś <b>jedzenie</b>. Zacząłeś się rozglądać za jakimś przyjaznym miejscem do zjedzenie posiłku. Wówczas ujrzałeś średnowieczny <b>młyn</b>. Zainteresowany podszedłeś bliżej niego. Wydawał się być w dobrym stanie. Gdzieniegdzie jedynie kruszły się cegły. Wyróżniał się jednak w znaczący sposób, ponieważ na samym jego szczycie widniał <b>maszt</b>. Łopoczący żagiel przykuwał uwagę. Nie mogłeś pojąć po co i w jaki sposób się tam znalazł. Wreszcie wygłodniały ruszyłeś dalej. Ciekła Ci ślinka na myśl o własnej <b>lodówce</b> wypełnionej jedzeniem. Niestety podczas spaceru zawędrowałeś w nieznane rejony miasta i nie miałeś pojęcia jak wrócić do domu. Bardzo zagubiony zapytałeś przechodzącego <b>księdza</b> o drogę. Z radością wskazał Ci odpowiedni kierunek. Z werwą wygłodniałego człowieka ruszyłeś przed siebie. Po dłuższej chwili dotarłeś do domu i wreszcie mogłeś spożyć swoją kolację, czytając przy tym <b>gazetę</b>.</p>
+
+
+<a href="{{ url_for('cwiczenie2formularz') }}" class="btn btn-danger btn-lg btn-block" role="button">Podaj rozwiązanie</a>
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "rodzaje_pamieci" %}
+{% block content %}
+
+<h3>Rodzaje pamięci</h3>
+
+<p>Klasyfikacja rodzajów pamięci według Squire'a i Zola-Morgan z 1991:</p>
+<div class="mt-5 mb-4">
+    <img src="/static/images/podzial-pamieci.png" class="img-fluid" alt="podział pamięci">
+</div>
+
+
+<p>Podział pamięci na deklaratywną i niedeklaratywną opiera się na dwóch kryteriach:</p>
+<ul>
+    <li>sposobie przechowywania informacji,</li>
+    <li>łatwości wydobycia informacji z pamięci.</li>
+</ul>
+
+
+<h5>Pamięć deklaratywna</h5>
+<p>Pamięć deklaratywna inaczej nazywana pamięcią jawną. Do informacji przechowywanych w tej pamięci mamy łatwy dostęp. Mamy świadomość posiadanej wiedzy. Możemy łatwo zwerbalizować jej zawartość. </p>
+
+<p>Przechowuje ona informacje, które odpowiadają na pytanie &bdquo;wiem, że...&rdquo;. Składa się z pamięci semantycznej, epizodycznej oraz autobiograficznej. Możemy do niej sięgnąć niezależnie od kontekstu, w którym się znajdujemy.</p>
+
+<p>Przykłady informacji przechowywanych w pamięci deklaratywnej:</p>
+<ul>
+    <li>Pies jest zwierzęciem.</li>
+    <li>Mam na imię Jan.</li>
+    <li>Żeby zdobyć punkt w koszykówce należy wrzucić piłkę do kosza.</li>
+</ul>
+
+<h5>Pamięć niedeklaratywna</h5>
+<p>Pamięć niedeklaratywna inaczej nazywana pamięcią niejawną lub proceduralną. Informacje w niej przechowywane nie są łatwe do werbalizacji. Zazwyczaj są to różnego rodzaju:</p>
+<ul>
+    <li>umiejętności,</li>
+    <li>nawyki,</li>
+    <li>doświadczenia.</li>
+</ul>
+
+<p>Wiedza z pamięci niejawnej zazwyczaj ujawnia się automatycznie w momencie wystąpienia sytuacji, w której została przyswojona. Informacje w niej przechowywane odpowiadają na pytanie &bdquo;wiem, jak...&rdquo;. Są swoistymi przepisami na zachowanie w danej sytuacji.</p>
+
+<p>Przykłady informacji przechowywanych w pamięci proceduralnej:</p>
+<ul>
+    <li>sposób jazdy na rowerze,</li>
+    <li>odruch cofnięcia ręki przed gorącym przedmiotem,</li>
+    <li>umiejętność obsługi sprzęgła w samochodzie.</li>
+</ul>
+
+
+
+
+
+{% endblock %}

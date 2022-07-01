@@ -1,0 +1,104 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie5" %}
+{% block content %}
+
+
+<h4>Twój wynik to: {{ wynik }}</h4>
+
+<div class="row justify-content-center">
+    {% if rezultat == 'bad' %}
+    <p>Wynik pomiędzy <b>0-3</b> jest słaby. Powinienień jeszcze trochę poćwiczyć.</p>
+    {% endif %}
+
+    {% if rezultat == 'medium' %}
+    <p>Wynik pomiędzy <b>4-7</b> jest całkiem niezły. Ale wciąż pozostaje miejsce na poprawę!</p>
+    {% endif %}
+
+    {% if rezultat == 'good' %}
+    <p>Wynik pomiędzy <b>8-10</b> jest znakomity. Świetnie sobie poradziłeś z tym ćwiczeniem!</p>
+    {% endif %}
+</div>
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Numer</th>
+            <th scope="col">Obrazek</th>
+            <th scope="col">Prawidłowa odpowiedź</th>
+            <th scope="col">Twoja odpowiedź</th>
+        </tr>
+    </thead>
+    <tr scope="row">
+        <td id="{{ odp['1'] }}">1</td>
+        <td><img src="/static/images/train.svg" class="img-fluid" alt="pociąg" id="zdjecie2"></td>
+        <td><img src="/static/images/bag.svg" class="img-fluid" alt="torba" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['1'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['2'] }}">2</td>
+        <td><img src="/static/images/ladder.svg" class="img-fluid" alt="drabina" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/armchair.svg" class="img-fluid" alt="fotel" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['2'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['3'] }}">3</td>
+        <td><img src="/static/images/court.svg" class="img-fluid" alt="sąd" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/baby.svg" class="img-fluid" alt="dziecko" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['3'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['4'] }}">4</td>
+        <td><img src="/static/images/cactus.svg" class="img-fluid" alt="kaktus" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/hospital.svg" class="img-fluid" alt="szpital" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['4'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['5'] }}">5</td>
+        <td><img src="/static/images/butter.svg" class="img-fluid" alt="masło" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/chimney.svg" class="img-fluid" alt="komin" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['5'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['6'] }}">6</td>
+        <td><img src="/static/images/hamburger.svg" class="img-fluid" alt="hamburger" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/elderly.svg" class="img-fluid" alt="staruszek" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['6'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['7'] }}">7</td>
+        <td><img src="/static/images/cave.svg" class="img-fluid" alt="jaskinia" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/clock.svg" class="img-fluid" alt="zegar" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['7'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['8'] }}">8</td>
+        <td><img src="/static/images/radio.svg" class="img-fluid" alt="radio" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/kiosk.svg" class="img-fluid" alt="kiosk" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['8'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['9'] }}">9</td>
+        <td><img src="/static/images/violin.svg" class="img-fluid" alt="skrzypce" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/donut.svg" class="img-fluid" alt="pączek" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['9'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+    <tr scope="row">
+        <td id="{{ odp['10'] }}">10</td>
+        <td><img src="/static/images/book.svg" class="img-fluid" alt="książka" id="zdjecie2">
+        </td>
+        <td><img src="/static/images/microphone.svg" class="img-fluid" alt="mikrofon" id="zdjecie2"></td>
+        <td><img src="/static/images/{{ odpowiedzi['10'] }}.svg" class="img-fluid" id="zdjecie2"></td>
+    </tr>
+
+</table>
+
+{% endblock %}

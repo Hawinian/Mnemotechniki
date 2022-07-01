@@ -1,0 +1,309 @@
+{% extends 'baseg.html' %}
+{% set active_menu = "glowna" %}
+{% block index %}
+<div class="row" id="men">
+
+
+    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+
+
+    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+
+        <div class="container">
+            {% block content %}
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <span id="tytul">NATURALNE WYKORZYSTANIE PAMIĘCI</span>
+                </div>
+                <div class="row justify-content-center">
+                    <span id="tytul">MNEMOTECHNIKI W PRAKTYCE</span>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-8 col-sm-10 cols-xs-10 mt-2">
+                        <p>Niniejszy serwis jest poświęcony tematyce pamięci oraz mnemotechnikom. Odkryjesz tu niesamowite sposoby, dzięki którym zapamiętywanie nowego materiału nie sprawi Ci już żadnego problemu!</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info ">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Jak polepszyć pamięć?</h5>
+                            <p class="card-text">Nie jesteś zadowolony z tego jak funkcjonuje Twoja pamięć? Dowiedz się w jaki sposób możesz ją usprawnić!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('polepszenie_pamieci')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col  mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">System Loci</h5>
+                            <p class="card-text">Zbuduj własny pałac pamięci już teraz!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('loci')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info ">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Magazynowy podział pamięci</h5>
+                            <p class="card-text">Czy słyszałeś kiedyś o pamięci zmysłów? Czy wiesz jak pojemna jest Twoja pamięć? Teraz możesz się tego dowiedzieć!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('podzial_pamieci')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Łańcuchowa metoda skojarzeń</h5>
+                            <p class="card-text">Zapamiętuj wszystkie informacje przez zabawne historyjki. Dzięki tej technice nauka nigdy nie będzie już nudna!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('skojarzenia')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Pamięć przemijająca</h5>
+                            <p class="card-text">Czy niektóre informacje niesustannie ulatują z Twojej pamięci? Dowiedz się jakie i czy możesz temu zapobiec!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('pamiec_przemijajaca')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Metoda liczbowo-kształtowa</h5>
+                            <p class="card-text">Masz problem z zapamiętaniem numeru telefonu? Albo z listą czynności do wykonania? Już nie! Jeśli oczywiście przeczytasz ten artykuł.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('liczby')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Pamięć trwała</h5>
+                            <p class="card-text">Pewne wiadomości będziesz pamiętał przez długie lata. Kliknij i dowiedz się jakie to są informacje.
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('pamiec_trwala')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">System Grey'a</h5>
+                            <p class="card-text">Marzyłeś kiedyś o zostaniu szpiegiem? A może marzył Ci się własny system komunikacji? Z systemem Grey'a to wszystko jest możliwe!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('grey')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Zawodność pamięci</h5>
+                            <p class="card-text">Nie wolno ufać zeznaniom świadków, Twoja własna pamieć fałszuje wspomnienia, a Ty możesz zapomnieć kim jesteś. Jak to jest możliwe?</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('zawodnosc_pamieci')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Akronimy</h5>
+                            <p class="card-text">Przekonaj się jak najprostsza technika może być tą najskuteczniejszą!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('akronimy')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Rodzaje pamięci</h5>
+                            <p class="card-text">Czy do wszystkiego co pamiętasz masz natychmiastowy dostęp? A może coś wiesz, ale nie umiesz tego opowiedzieć? Dowiedz się, dlaczego tak jest!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('rodzaje_pamieci')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Słówka obcojęzyczne</h5>
+                            <p class="card-text">Uczysz się języka obcego? Naucz się metody, dzięki której nauka słówek już nigdy nie będzie trudna!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('slowka')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Czynności pamięciowe</h5>
+                            <p class="card-text">Zastanawiałeś się kiedyś jakie procesy mogą zachodzić w Twojej pamięci? Po przeczytaniu tego artykułu, nie będziesz się już dłużej zastanawiał!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('czynnosci_pamieciowe')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mapy poznawcze</h5>
+                            <p class="card-text">Na pewno słyszałeś kiedyś o mapie myśli. Ale czy umiesz ją skutecznie zastosować w procesie nauki? Albo wiesz dlaczego jest taka skuteczna?</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('mapy')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col mb-4 ">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-info">
+                            Pamięć
+                        </div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Półkule mózgu</h5>
+                            <p class="card-text">Każdy z nas ma dwie półkule mózgu: profesorską i artystyczną. Dowiedz się, z której Ty częściej korzystasz i w jaki sposób możesz to wykorzystać!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('polkule')}}" class="btn btn-info">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card bg-light h-100 shadow p-0 mb-5 rounded">
+                        <div class="card-header bg-danger">
+                            Mnemotechniki
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ćwiczenia na start</h5>
+                            <p class="card-text">Szukasz ćwiczeń dzięki którym wprowadzisz się w tematykę mnemotechnik? Tu znajdziesz ich pod dostatkiem!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{{url_for('cwiczenie1')}}" class="btn btn-danger">Zobacz!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            {% endblock %}
+        </div>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1"> </div>
+
+
+</div>
+
+{% endblock %}

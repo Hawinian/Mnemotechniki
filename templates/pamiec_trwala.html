@@ -1,0 +1,47 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "pamiec_trwala" %}
+{% block content %}
+
+<h3>Pamięć trwała</h3>
+<p><em>Pamięć trwała przechowuje informacje bez wyraźnych ograniczeń czasowych.</em></p>
+
+<blockquote class="blockquote text-right">
+    <footer class="blockquote-footer">Edward Nęcka, Jarosław Orzechowski, Błażej Szymura <cite title="Source Title">Psychologia Poznawcza</cite></footer>
+</blockquote>
+
+<p>Pamięć trwała charakteryzuje się dłuższym czasem przechowywania informacji niż <a href="{{url_for('pamiec_przemijajaca')}}">pamięć przemijająca</a>. Polega ona na gromadzeniu wiedzy potrzebnej do funkcjonowania w środowisku. Przechowywane informacje charakteryzują się dużą trwałością. Rodzaje pamięci trwałej to pamięć semantyczna, epizodyczna oraz autobiograficzna. Możemy w relatywnie łatwy sposób wypowiedzieć przechowywaną w niej treść.</p>
+
+<h5>Pamięć semantyczna</h5>
+<p>Przechowuje wiedzę ogólną łatwą do werbalizacji, oderwaną od kontekstu danej sytuacji. Nie mamy problemu, żeby przywołać daną informację bez specjalnych okoliczności. Pamięć semantyczna jest swoistym rodzajem wewnętrznego słownika. Przechowuje wiedzę o słowach, symbolach werbalnych i ich znaczeniach. </p>
+
+<p>Informacje zapisywane w tym rodzaju pamięci są przekazywane przez słowa. Nie muszę niczego doświadczyć ani zobaczyć, by zapamiętać przekazaną wiadomość. Wszystkie dane są zorganizowane pojęciowo. Nie potrzebujemy znać kontekstu zapamiętania danej informacji.</p>
+
+<h5>Pamięć epizodyczna</h5>
+<p>Pamięć epizodyczna dotyczy informacji o epizodach umiejscowionych w konkretnym czasie i wydarzeniach oraz czasowo-przestrzennych relacjach między nimi. Zapisy w tej pamięci uwzględniają bogaty kontekst danej sytuacji. </p>
+
+<p>Kodowane informacje uwzględniają chronologię wydarzeń. Pomiędzy poszczególnymi elementami może zachodzić ciąg przyczynowo-skutkowy. </p>
+
+<p>Przykłady informacji przechowywanych w pamięci epizodycznej:</p>
+<ul>
+    <li>Pamiętam jak wyglądały moje 18 urodziny.</li>
+    <li>Pamiętam swój pierwszy całunek.</li>
+    <li>Pamiętam co robiłem dzisiaj o 10.</li>
+</ul>
+
+<h5>Pamięć autobiograficzna</h5>
+<p>Pamięć autobiograficzna jest ściśle powiązana z pamięcią epizodyczną. Podobnie jak ona skupia się na zapisie minionych wydarzeń, skupia się jednak na wydarzeniach, w których sami braliśmy udział. Ważny jest w niej kontekst oraz źródło pozyskanych informacji. </p>
+
+<p>Pamięć dotycząca wydarzeń, w których braliśmy udział zostawia w naszym umyśle silny ślad. Poprzez ponowne pojawienie się podobnego kontekstu znacznie łatwiej nam odtworzyć zapisy naszej pamięci autobiograficznej. Z tego sposobu przechowywania wiadomości korzysta mnemotechnika <a href="{{url_for('loci')}}">systemu miejsc</a>.</p>
+
+<p>W skład pamięci autobiograficznej wchodzą:</p>
+<ul>
+    <li>Narracje werbalne, czyli historie dotyczące własnej przeszłości.</li>
+    <li>Elementy obrazowe, czyli zapamiętane obrazy, zarówno prawdziwe i fikcyjne.</li>
+    <li>Emocje - możemy sobie przypomnieć zdarzenia, podczas których odczuwaliśmy konkretną emocję.</li>
+</ul>
+
+
+
+
+{% endblock %}

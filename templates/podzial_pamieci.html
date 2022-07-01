@@ -1,0 +1,38 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "podzial_pamieci" %}
+{% block content %}
+
+<h3>Magazynowy podział pamięci</h3>
+
+<p>Magazynowy podział pamięci opiera się na modelu stworzonym przez Atkinsona i Shiffrina w 1968 roku. Podział na poszczególne części opiera się na kryterium czasu przechowywania informacji.</p>
+
+<h5>Sposób podziału</h5>
+<p>Wyróżniamy trzy oddzielne magazyny: </p>
+<ul>
+    <li>sensoryczny,</li>
+    <li> pamięci krótkotrwałej, </li>
+    <li>pamięci długotrwałej.</li>
+</ul>
+<p>Poszczególne systemy różnią się między sobą czasem przechowywania informacji, sposobem kodowania, wydobywania i zapominania informacji.</p>
+
+<h5>Pamięć sensoryczna</h5>
+<p>Główną funkcją pamięci sensorycznej jest przetrzymanie otrzymanego bodźca przez kilkaset milisekund. Magazyn sensoryczny jest wyodrębniony dla każdego zmysłu z nim powiązanego. Mamy więc pamięć sensoryczną wzrokową, słuchową czy węchową.</p>
+
+<p>Magazyn sensoryczny działa całkiem niezależnie od naszej woli, jego działanie jest w pełni nieświadome. To tutaj trafiają wszelkie informacje z otoczenia, wychwycone przez nasze zmysły. Stąd zgromadzone informacje mogą trafić jedynie do pamięci krótkotrwałej lub ulecieć bezpowrotnie.</p>
+
+<h5>Pamięć krótkotrwała</h5>
+<p>W pamięci krótkotrwałej znajdują się:</p>
+<ul>
+    <li>bodźce, które dotarły z magazynów sensorycznych,</li>
+    <li>informacje przywoływane z pamięci długotrwałej,</li>
+    <li>obecnie przetwarzane informacje.</li>
+</ul>
+<p>Pamięć krótkotrwała jest mało pojemna i łatwo ulega przeciążeniu. Jej główną funkcją jest przechowywanie informacji w czasie niezbędnym do jej przetworzenia. Współczesne badania mówią, że możemy w niej przechowywać około 7 elementów.</p>
+
+<p>Sprawność działania oraz pojemność pamięci krótkotrwałej jest kwestią bardzo indywidualną. Dzięki treningowi możemy udoskonalić jej pracę.</p>
+
+<h5>Pamięć długotrwała</h5>
+<p>Magazyn pamięci długotrwałej charakteryzuje się najdłuższym czasem przechowywania informacji. Dane tutaj zgromadzone mogą być przechowywane przez lata. Niestety odtworzenie zgromadzonych wiadomości nie zawsze jest takie proste. Zmagazynowany materiał nie jest nam dostępny bezpośrednio. Stąd taka duża przydatność <a href="{{url_for('mnemotechniki')}}">mnemotechnik</a>, które dostarczają odpowiednich narzędzi ułatwiających przypominanie sobie informacji.</p>
+
+{% endblock %}

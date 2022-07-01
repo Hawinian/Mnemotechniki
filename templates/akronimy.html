@@ -1,0 +1,45 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "akronimy" %}
+{% block content %}
+
+<h3>Akronimy</h3>
+<h5>Wprowadzenie</h5>
+<p>Akronimy to najprostsza z prezentowanych mnemotechnik. Miałeś największe szanse by akurat z nią się zetknąć wcześniej. Polega ona na tworzeniu skrótów od pierwszych liter wyrazów lub informacji, które chcemy zapamiętać.</p>
+
+<h5>Rodzaje</h5>
+<ol>
+    <li>Akronimy znaczące - powstały skrót ma jakieś znaczenie:
+        <ul>
+            <li>Lista wielkich jezior Ameryki północnej: <b>H</b>uron, <b>O</b>ntario, <b>M</b>ichigan, <b>E</b>yrie, <b>S</b>uperior tworzą skrót <b>Homes</b> (ang. domy)</li>
+        </ul>
+    </li>
+    <li>Akronimy nieznaczące - powstały skrót nie ma żadnego sensownego znaczenia:</li>
+    <ul>
+        <li>Okresy paleozoiku: <b>K</b>ambr, <b>O</b>rdowik, <b>S</b>ylur, <b>D</b>ewon, <b>K</b>arbon, <b>P</b>erm tworzą skrót <b>KOSDKP</b></li>
+    </ul>
+</ol>
+
+<h5>Metoda pierwszych liter</h5>
+
+<p>Techniką pokrewną do akronimów jest tworzenie zdań z wyrazami zaczynającymi się na tą samą literę co zapamiętywany ciąg informacji. Należy tu zastosować analogie do <a href="{{url_for('skojarzenia')}}">łańcuchowej metody skojarzeń</a> i pomiędzy każdym wyrazem wytworzyć silne skojarzenie. Każdy kolejny wyraz ma wywoływać wspomnienie o następnym.</p>
+
+<ul>
+
+    <li> Lista Planet w kolejności od Słońca: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun. Możemy utworzyć zdanie: <b>M</b>oja <b>W</b>iecznie <b>Z</b>apracowana <b>M</b>ama <b>J</b>utro <b>S</b>ama <b>U</b>piecze <b>N</b>am placek.</li>
+
+    <li>Cyfry Rzymskie:
+        <ul>
+            <li>L - 50</li>
+            <li>C - 100</li>
+            <li>D - 500</li>
+            <li>M - 1000</li>
+        </ul>
+        Możemy z nich utworzyć zdanie: <b>L</b>ubię <b>C</b>zerwone <b>D</b>uże <b>M</b>aliny.
+    </li>
+
+    <li>Symbole kierunków świata: North, East, South, West (czytane zgodnie z ruchem wskazówek zegara). Możemy zapamiętać za pomocą zdania: <b>N</b>a <b>E</b>kranie <b>S</b>iedzi <b>W</b>rona.</li>
+</ul>
+
+
+{% endblock %}

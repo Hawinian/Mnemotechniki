@@ -1,0 +1,21 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie6" %}
+{% block content %}
+
+<h3>Ćwiczenie 6</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie z rzymskiego pokoju</h5>
+</div>
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które ma pomóc Ci opanować mnemotechnikę nazywaną rzymskim pokojem lub system loci. jeżeli nie wiesz na czym polega ta technika. Koniecznie przeczytaj artykuł o <a href="{{ url_for('loci') }}">systemie loci</a>.</p>
+
+<p>Po przyciśnięciu przycisku Rozpocznij wyświetli Ci się lista piętnastu wyrazów. Twoim zadaniem jest umieszczenie każdego z tych pojęć we własnym pokoju rzymskim. Później wypisz te słowa w odpowiedniej kolejności. Powodzenia! </p>
+
+
+<div class="mt-5">
+    <a href="{{ url_for('cwiczenie6start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+{% endblock %}

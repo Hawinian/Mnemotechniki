@@ -1,0 +1,31 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "mapy" %}
+{% block content %}
+
+<h3>Mapy poznawcze</h3>
+<p>Mapa poznawcza inaczej nazywana mapą myśli, mentalną lub kognitywną. Jest to specjalny rodzaj notowania, pisemno-graficzny, który ma zaangażować do pracy <a href="{{url_for('polkule')}}">obie półkule mózgu</a>. Polega ona na hierarchicznym uporządkowaniu złożonej informacji w postaci specyficznego diagramu.</p>
+
+<p>
+    <img src="/static/images/mapa_mys.png" class="img-fluid" alt="mapa myśli">
+    <span style="font-size: small;" class="text-muted">Źródło: http://www.mapymysli.edu.pl/2014/02/powszechne-bedy-przy-tworzeniu-map-mysli.html</span>
+</p>
+
+
+<h5>Budowa</h5>
+<p>W centralnej części mapy musi znajdować się kluczowe zagadnienie, w postaci krótkiego hasła lub rysunkowej wizualizacji. Od części centralnej odchodzą &bdquo;gałęzie&rdquo; z najistotniejszymi informacjami. Jeszcze niżej w hierarchii znajdują się bardziej szczegółowe wiadomości o poszczególnych zagadnieniach.</p>
+
+<h5>Tworzenie mapy</h5>
+<p>Przy tworzeniu mapy poznawczej istotne jest zaktywizowanie prawej półkuli mózgu, która nie jest tradycyjnie wykorzystywana przy procesie nauki. </p>
+<p>W trakcie rysowania mapy myśli postaraj się: </p>
+<ul>
+    <li>używać różnych kolorów,</li>
+    <li>dużo rysować, jeśli jakieś hasło możesz narysować - zrób to,</li>
+    <li>dostosowywać wielkość pisma do wagi informacji - najważniejsze wiadomości pisz największymi literami,</li>
+    <li>dbać o przejrzystość, byś zawsze mógł wrócić do takiej mapy i rozumiał o co w niej chodzi.</li>
+</ul>
+
+<h5>Skuteczność</h5>
+<p>Z badań Farranda, Hussaina i Hennessy z 2002 roku na grupie studentów medycyny potwierdzono skuteczność mapy myśli jako ulepszonej formie prowadzenia notatek. Grupa badawcza i kontrolna miała za zadanie przyswojenia informacji z tekstu liczącego 600 słów. Studenci wykorzystujący mapy poznawcze po tygodniu od nauki pamiętali o ok. 10-15% więcej materiału niż studenci, którzy mogli korzystać z dowolnych technik zapamiętywania.</p>
+
+{% endblock %}

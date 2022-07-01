@@ -1,0 +1,50 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "pamiec" %}
+{% block content %}
+
+<h3>Pamięć - wiadomości ogólne</h3>
+<p> <em>Pamięć jest zdolnością do przechowywania informacji i późniejszego jej wykorzystania. Z innego punktu widzenia pamięć to zespół procesów poznawczych, zaangażowanych w nabywanie, przechowywanie i późniejsze odtwarzanie informacji.</em></p>
+<blockquote class="blockquote text-right">
+    <footer class="blockquote-footer">Edward Nęcka, Jarosław Orzechowski, Błażej Szymura <cite title="Source Title">Psychologia Poznawcza</cite></footer>
+</blockquote>
+
+
+<h5>Po co nam pamięć?</h5>
+<p>Napoleon Bonaparte powiedział kiedyś, że głowa bez pamięci to twierdza bez garnizonu. Wypowiadając tę myśl Bonaparte pokazuje nam, jak bezbronni bylibyśmy bez pamięci. Wszystkie procesy poznawcze, w których uczestniczy nasz organizm są zależne od pamięci. </p>
+
+<p>Pamięć przechowuje wszelkie informacje, które do nas trafiają. Może je przechowywać przez kilka milisekund lub przez całe nasze życie. To co przechowujemy w naszej pamięci definiuje nas kim jesteśmy. Jest naszą wewnętrzną encyklopedią.</p>
+
+<h5>Magazynowy podział pamięci</h5>
+
+<p>Głównym kryterium magazynowego podziału pamięci jest czas przechowywania informacji. Wyróżniamy według niego trzy systemy:</p>
+
+<ul>
+    <li>magazyn sensoryczny,</li>
+    <li>magazyn krótkotrwały,</li>
+    <li>magazyn długotrwały.</li>
+</ul>
+
+<p>Więcej o <a href="{{url_for('podzial_pamieci')}}">magazynowym podziale pamięci</a></p>
+
+
+<h5>Klasyfikacja rodzajów pamięci</h5>
+<p>Najbardziej ogólnego podziału rodzajów pamięci dokonał Squire na podstawie wcześniejszych badań wielu naukowców. Dzieli on rodzaje pamięci ze względu na przebieg <a href="{{url_for('czynnosci_pamieciowe')}}">czynności pamięciowych</a>. Podział ten wykorzystuje wcześniej znane podziały, dokonuje ich klasyfikacji oraz uwzględnia relacje, które zachodzą pomiędzy nimi. Więcej o <a href="{{url_for('rodzaje_pamieci')}}">rodzajach pamięci</a>.</p>
+
+<h5>Dwa systemy pamięci</h5>
+<p>Innym sposobem podziału pamięci są dwa odrębne systemy podzielone ze względu na trwałość przechowywanych informacji. Pierwszy to system <a href="{{url_for('pamiec_przemijajaca')}}">pamięci przemijającej</a> odpowiedzialny za ulotne informacje, które za krótką chwilę zostają zastąpione następnymi. Drugi z nich to system <a href="{{url_for('pamiec_trwala')}}">pamięci trwałej</a> odpowiedzialny za przechowywanie informacji, które mają zostać w naszej pamięci przez dłuższy czas. Nawet przez całe życie.</p>
+
+<h5>Zmienność pamięci</h5>
+<p>Na naszą pamięć może wpływać wiele czynników. Zarówno z zewnątrz jak i z naszego wnętrza. Możemy <a href="{{url_for('czynnosci_pamieciowe', _anchor='zapamietywanie')}}">zapamiętywać</a> nowe informacje, <a href="{{url_for('czynnosci_pamieciowe', _anchor='przechowywanie')}}">przechowywać</a> stare czy <a href="{{url_for('czynnosci_pamieciowe', _anchor='odpamietywanie')}}">przypominać</a> sobie te zachowane w naszej pamięci.</p>
+
+<p>Nasza pamięć może nas oszukiwać. Badania dostarczyły nam wiele dowodów, że nasze wspomnienia wcale nie muszą pokazywać tego, co wydarzyło się naprawdę. Procesy pamięciowe w naszym umyśle mogą być <a href="{{url_for('zawodnosc_pamieci')}}">zawodne</a>.</p>
+
+<h5>Potencjał pamięci</h5>
+<p>Od wielu lat wiemy, że nasz umysł ma wielki potencjał, a szczególnie nasza pamięć. Dlatego powinniśmy wiedzieć, jaki potencjał skrywają nasze <a href="{{url_for('polkule')}}">półkule mózgowe</a> byśmy mogli je w pełni wykorzystywać. Naszą pamięć możemy również trenować. Z chęcią wskażę Ci porady, jak <a href="{{url_for('polepszenie_pamieci')}}">poprawić działanie Twojej pamięci</a>.</p>
+
+<h5>Pamięć a mnemotechniki</h5>
+<p><a href="{{url_for('mnemotechniki')}}">Mnemotechniki</a> to sposoby na naturalne wykorzystanie potencjału Twojej pamięci. Dzięki nim będziesz mógł w pełni wykorzystać wszystkie teoretyczne możliwości swojego umysłu oraz pamięci. Wiedzę teoretyczną przekujesz w praktykę.</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie4" %}
+{% block content %}
+
+<h3>Ćwiczenie 4</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie wprowadzające do tworzenia skojarzeń</h5>
+</div>
+
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które jest wstępem do nauki mnemotechnik. Dzięki niemu sam przekonasz się jak dobra jest Twoja pamięć i czy masz nad czym pracować.</p>
+<p>Zanim przystąpisz do tego zadania wykonaj <a href="{{ url_for('cwiczenie3') }}">zadanie 3</a>.</p>
+<p>Twoim zadaniem w tym ćwiczeniu nie bedzie zapamiętanie nazw państw, lecz ich symboli. Gdy przeczytasz nazwę państw skup się na pierwszym skojarzeniu, które przyszło Ci do głowy. Myśl o nim przez najbliższe 5 sekund. Jedynie o tym symbolu lub skojarzeniu. <b>Pierwsze skojarzenie jest zawsze najsilniejsze!</b></p>
+Przykład:
+<ul>
+    <li><b>Francja</b> - wyobraź sobie Wieżę Eiffla lub bagietkę, skup się na tym wyobrażeniu przez 5 sekund i przejdź dalej.</li>
+    <li><b>Japonia</b> - wyobraź sobie kwitnącą wiśnię, kimono lub sushi, skup się na tym wyobrażeniu przez 5 sekund i przejdź dalej.</li>
+</ul>
+
+<div class="mt-5">
+<a href="{{ url_for('cwiczenie4start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+{% endblock %}

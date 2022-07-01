@@ -1,0 +1,128 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie3" %}
+{% block content %}
+
+
+<h4>Twój wynik to: {{ wynik }}</h4>
+
+<div class="row justify-content-center">
+    {% if rezultat == 'bad' %}
+    <p>Wynik pomiędzy <b>0-3</b> jest słaby. Powinienień jeszcze trochę poćwiczyć.</p>
+    {% endif %}
+
+    {% if rezultat == 'medium' %}
+    <p>Wynik pomiędzy <b>4-7</b> jest całkiem niezły. Ale wciąż pozostaje miejsce na poprawę!</p>
+    {% endif %}
+
+    {% if rezultat == 'good' %}
+    <p>Wynik pomiędzy <b>8-10</b> jest znakomity. Świetnie sobie poradziłeś z tym ćwiczeniem!</p>
+    {% endif %}
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+        <table class="table table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Numer</th>
+                    <th scope="col">Prawidłowa odpowiedź</th>
+                </tr>
+            </thead>
+            <tr scope="row">
+                <td>1</td>
+                <td>Hiszpania</td>
+            </tr>
+            <tr scope="row">
+                <td>2</td>
+                <td>Bahamy</td>
+            </tr>
+            <tr scope="row">
+                <td>3</td>
+                <td>Irak</td>
+            </tr>
+            <tr scope="row">
+                <td>4</td>
+                <td>Ghana</td>
+            </tr>
+            <tr scope="row">
+                <td>5</td>
+                <td>Jordania</td>
+            </tr>
+            <tr scope="row">
+                <td>6</td>
+                <td>Białoruś</td>
+            </tr>
+            <tr scope="row">
+                <td>7</td>
+                <td>Indie</td>
+            </tr>
+            <tr scope="row">
+                <td>8</td>
+                <td>Boliwia</td>
+            </tr>
+            <tr scope="row">
+                <td>9</td>
+                <td>Arabia Saudyjska</td>
+            </tr>
+            <tr scope="row">
+                <td>10</td>
+                <td>Pakistan</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <table class="table table-striped">
+               <thead class="thead-light">
+                <tr>   
+            <th scope="col">Numer</th>
+            <th scope="col">Twoja odpowiedź</th>
+                   </tr>
+            </thead>
+            <tr scope="row">
+                <td>1</td>
+                <td id="{{ odpowiedzi['jeden'] }}">{{ dane['jeden'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>2</td>
+                <td id="{{ odpowiedzi['dwa'] }}">{{ dane['dwa'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>3</td>
+                <td id="{{ odpowiedzi['trzy'] }}">{{ dane['trzy'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>4</td>
+                <td id="{{ odpowiedzi['cztery'] }}">{{ dane['cztery'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>5</td>
+                <td id="{{ odpowiedzi['piec'] }}">{{ dane['piec'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>6</td>
+                <td id="{{ odpowiedzi['szesc'] }}">{{ dane['szesc'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>7</td>
+                <td id="{{ odpowiedzi['siedem'] }}">{{ dane['siedem'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>8</td>
+                <td id="{{ odpowiedzi['osiem'] }}">{{ dane['osiem'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>9</td>
+                <td id="{{ odpowiedzi['dziewiec'] }}">{{ dane['dziewiec'] }}</td>
+            </tr>
+            <tr scope="row">
+                <td>10</td>
+                <td id="{{ odpowiedzi['dziesiec'] }}">{{ dane['dziesiec'] }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

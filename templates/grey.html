@@ -1,0 +1,65 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "grey" %}
+{% block content %}
+
+<h3>System Grey'a</h3>
+
+<h5>Wprowadzanie</h5>
+<p>System Grey'a inaczej nazywany zakładkową metodą pamięci polega na dopasowaniu każdej cyfrze jednej lub dwóch spółgłosek, z których tworzymy całościowy obraz. Sprawdza się ona świetnie do zapamiętywania dat historycznych, numerów telefonów, urodzin, rocznic czy imienin. Cały system opiera się na fonetycznym alfabecie Lorayne'a</p>
+
+<h5>Fonetyczny alfabet Lorayne'a</h5>
+<ul>
+    <li>0 - Z (S)</li>
+    <li>1 - T (D)</li>
+    <li>2 - N</li>
+    <li>3 - M</li>
+    <li>4 - R</li>
+    <li>5 - L</li>
+    <li>6 - J</li>
+    <li>7 - K (G)</li>
+    <li>8 - F (W)</li>
+    <li>9 - B (P)</li>
+</ul>
+<p>Spółgłoski odpowiadające poszczególnym cyfrom nazywają się zakładkami.</p>
+
+<h5>Działanie</h5>
+<p>Teraz możemy cyfry zamienić na odpowiadające im spółgłoski lub ich odpowiedniki (zależnie od tego czy potrzebujemy głoski dźwięcznej lub bez).</p>
+<ul>
+    <li>45 - R L</li>
+    <li>92 - B N</li>
+    <li>14 - T R</li>
+    <li>30 - M Z</li>
+    <li>21 - N T</li>
+</ul>
+<p>Na ten moment powstał jedynie bezsensowny ciąg liter. Kluczowe w działaniu tej metody jest stosowanie wypełniaczy. Wypełniaczami mogą być samogłoski lub spółgłoski nieużywane w fonetycznym alfabecie Lorayne'a. W ten sposób możemy stworzyć:</p>
+<ul>
+    <li>45 - RoLa</li>
+    <li>92 - B(P)iN</li>
+    <li>14 - ToR</li>
+    <li>30 - MuZa</li>
+    <li>21 - NiT</li>
+</ul>
+<p>W taki sposób możesz stworzyć wyrazy dla każdej liczby dwucyfrowej. Prawdziwie biegli tej mistrzowie mają opanowane wszystkie <b>wyrazy-symbole</b> odpowiadające liczbom od 0 do 99. Znacznie przyśpiesza to ich pracę z tą metodą.</p>
+
+<h5>Liczby wielocyfrowe</h5>
+<p>W swoim życiu napotykamy wiele liczb, które są dla nas ważne, ale niestety trudne do zapamiętania. Taką liczbą może być pin do karty, numer rachunku bankowego czy ważny numer telefonu.</p>
+
+<p>Gdy chcemy użyć mnemotechniki do zapamiętania takiego numeru sposób postępowania jest następujący:</p>
+<ul>
+    <li>Przykładowy numer telefonu: 131 687 557</li>
+    <li>Dzielisz liczbę wielocyfrową na liczby dwucyfrowe (może też być jednocyfrowa, jeśli nie ma pary):</li>
+    <ul>
+        <li>13 16 87 55 7</li>
+    </ul>
+    <li>Zmieniasz liczby na symbole:</li>
+    <ul>
+        <li>TaMa TuJa FoKa LaLa Kij</li>
+    </ul>
+    <li>Tworzysz historyjkę z poszczególnymi wyrazami:</li>
+    <ul>
+        <li>Na wysokiej <b>tamie</b> stoi <b>tuja</b>. W wodzie zatrzymanej przez tamę pływa sobie <b>foka</b>. Bardzo chce dostać się do tui i obgryźć igły. Niestety musi się zadowolić <b>lalą</b>, która wpadła do wody. Mała lalka to pastuszek z filmu Toy Story i trzyma w ręce <b>kij</b>.</li>
+    </ul>
+</ul>
+
+{% endblock %}

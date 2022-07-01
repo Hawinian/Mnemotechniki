@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block collapse %}
+<button type="button" id="sidebarCollapsep" class="navbar-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+{% endblock %}
+
+{% block content_menu %}
+<nav id="sidebarp">
+    <div class="sidebar-header">
+        <h2>Pamięć</h2>
+    </div>
+
+    <ul class="list-unstyled components">
+        <div id="sub-menu">
+            <div class="row justify-content-center" id="menu-icons">
+                <div id="sizeDown">
+                    <span class="ikony-pamiec" style="padding-right: 1em;">
+                        <i class="fas fa-search-minus"></i>
+                    </span>
+                </div>
+                <div id="normal">
+                    <span class="ikony-pamiec">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <div id="sizeUp">
+                    <span class="ikony-pamiec" style=" padding-left: 1em;">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <span id="tryb">Tryb ciemny </span>
+                <div id="pam">
+                    <div id="menu-theme">
+                        <div class="toggle-container">
+                            <input type="checkbox" id="switch" name="theme" />
+                            <label for="switch">Toggle</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <li class="nav-item {{ 'active' if active_page == 'pamiec' else '' }}">
+            <a class="nav-link" href="{{ url_for('pamiec') }}">Wprowadzenie</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'podzial_pamieci' else '' }}">
+            <a class="nav-link" href="{{ url_for('podzial_pamieci') }}">Magazynowy podział pamięci</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'rodzaje_pamieci' else '' }}">
+            <a class="nav-link" href="{{ url_for('rodzaje_pamieci') }}">Rodzaje pamięci</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'pamiec_przemijajaca' else '' }}">
+            <a class="nav-link" href="{{ url_for('pamiec_przemijajaca') }}">Pamięć przemijająca</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'pamiec_trwala' else '' }}">
+            <a class="nav-link" href="{{ url_for('pamiec_trwala') }}">Pamięć trwała</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'czynnosci_pamieciowe' else '' }}">
+            <a class="nav-link" href="{{ url_for('czynnosci_pamieciowe') }}">Czynności pamięciowe</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'polkule' else '' }}">
+            <a class="nav-link" href="{{ url_for('polkule') }}">Półkule mózgu</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'polepszenie_pamieci' else '' }}">
+            <a class="nav-link" href="{{ url_for('polepszenie_pamieci') }}">Polepszenie pamięci</a>
+        </li>
+        <li class="nav-item {{ 'active' if active_page == 'zawodnosc_pamieci' else '' }}">
+            <a class="nav-link" href="{{ url_for('zawodnosc_pamieci') }}">Zawodność pamięci</a>
+        </li>
+
+
+
+    </ul>
+</nav>
+
+
+
+{% endblock %}

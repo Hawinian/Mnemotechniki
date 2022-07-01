@@ -1,0 +1,46 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie7" %}
+{% block content %}
+
+<div class="row justify-content-center">
+    <h3>Ćwiczenie 7</h3>
+</div>
+
+<div class="row justify-content-center">
+    <form action="" method="post">
+        <p>{{ form.jeden.label }}
+            {{ form.jeden(size=50) }}</p>
+        <p>{{ form.dwa.label }}
+            {{ form.dwa(size=50) }}</p>
+        <p>{{ form.trzy.label }}
+            {{ form.trzy(size=50) }}</p>
+        <p>{{ form.cztery.label }}
+            {{ form.cztery(size=50) }}</p>
+        <p>{{ form.piec.label }}
+            {{ form.piec(size=50) }}</p>
+        <p>{{ form.szesc.label }}
+            {{ form.szesc(size=50) }}</p>
+        <p>{{ form.siedem.label }}
+            {{ form.siedem(size=50) }}</p>
+        <p>{{ form.osiem.label }}
+            {{ form.osiem(size=50) }}</p>
+        <p>{{ form.dziewiec.label }}
+            {{ form.dziewiec(size=50) }}</p>
+        <p>{{ form.dziesiec.label }}
+            {{ form.dziesiec(size=49) }}</p>
+        <p>{{ form.jedenascie.label }}
+            {{ form.jedenascie(size=49) }}</p>
+        <p>{{ form.dwanascie.label }}
+            {{ form.dwanascie(size=49) }}</p>
+        <p>{{ form.trzynascie.label }}
+            {{ form.trzynascie(size=49) }}</p>
+        <p>{{ form.czternascie.label }}
+            {{ form.czternascie(size=49) }}</p>
+        <p>{{ form.pietnascie.label }}
+            {{ form.pietnascie(size=49) }}</p>
+        <button type="submit" class="btn btn-danger btn-lg btn-block">Zakończ</button>
+    </form>
+</div>
+
+{% endblock %}

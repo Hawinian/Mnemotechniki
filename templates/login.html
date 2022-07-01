@@ -1,0 +1,47 @@
+{% extends 'baseg.html' %}
+{% set active_menu = "konto" %}
+{% set active_page = None %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <form action="" method="post">
+        {{ form.csrf_token }}
+
+
+        <div class="form-group">
+            <!--  <label for="login">{{ form.login.label }}</label> -->
+            <input class="form-control" id="login" name="login" type="text" placeholder="Login" size=50>
+
+            {% if Loginerror %}
+
+            <ul class="errors">
+                <li> {{ Loginerror }} </li>
+            </ul>
+
+            {% endif %}
+        </div>
+
+
+        <div class="form-group">
+            <!--    <label for="password">{{ form.password.label }}</label> -->
+            <input class="form-control" id="password" name="password" type="password" placeholder="Hasło" size="50">
+            {% if Passerror %}
+            <ul class="errors">
+                <li> {{ Passerror }} </li>
+            </ul>
+            {% endif %}
+        </div>
+
+
+
+        <button type="submit" class="btn btn-danger btn-lg btn-block">Zaloguj</button>
+    </form>
+</div>
+
+<div class="row justify-content-center">
+    <div class="mt-4">
+        <p>Nie masz jeszcze swojego konta? <a href="{{url_for('register')}}">Zarejestruj się!</a></p>
+    </div>
+</div>
+{% endblock %}

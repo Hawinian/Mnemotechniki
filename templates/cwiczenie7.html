@@ -1,0 +1,21 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie7" %}
+{% block content %}
+
+<h3>Ćwiczenie 7</h3>
+
+<div class="mb-4">
+    <h5>Ćwiczenie z łańcuchowej metody skojarzeń</h5>
+</div>
+
+<p>Za chwilę rozpoczniesz ćwiczenie, które ma pomóc Ci opanować mnemotechnikę nazywaną łańcuchową metodą skojarzeń. jeżeli nie wiesz na czym polega ta technika. Koniecznie przeczytaj artykuł o <a href="{{ url_for('skojarzenia') }}">łańcuchowej metodzie skojarzeń</a>.</p>
+
+<p>Po przyciśnięciu przycisku Rozpocznij wyświetli Ci się lista piętnastu wyrazów. Twoim zadaniem jest stworzenie łańcucha skojarzeniowego. Później wypisz te słowa w odpowiedniej kolejności. Powodzenia! </p>
+
+
+<div class="mt-5">
+    <a href="{{ url_for('cwiczenie7start') }}" class="btn btn-danger btn-lg btn-block" role="button">Rozpocznij</a>
+</div>
+
+{% endblock %}

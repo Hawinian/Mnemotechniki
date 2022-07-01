@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block collapse %}
+<button type="button" id="sidebarCollapsem" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+{% endblock %}
+
+{% block content_menu %}
+
+<nav id="sidebarm">
+   <div class="sidebar-header">
+        <h2>Mnemotechniki</h2>
+    </div>
+
+    <ul class="list-unstyled components">
+        <div id="sub-menu">
+        <div class="row justify-content-center" id="menu-icons">
+            <div id="sizeDown">
+                <span class="ikony-mnemo" style=" padding-right: 1em;">
+                    <i class="fas fa-search-minus"></i>
+                </span>
+            </div>
+            <div id="normal">
+                <span class="ikony-mnemo">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div id="sizeUp">
+                <span class="ikony-mnemo" style="padding-left: 1em;">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <span id="tryb">Tryb ciemny </span>
+            <div id="mnemo">
+            <div id="menu-theme">
+                <div class="toggle-container">
+                    <input type="checkbox" id="switch" name="theme"/>
+                      <label for="switch">Toggle</label>
+                </div>
+            </div>
+            </div>
+        </div>
+            </div>
+
+        <li class="nav-item {{ 'active' if active_page == 'mnemotechniki' else '' }}">
+            <a class="nav-link" href="{{ url_for('mnemotechniki') }}">Wprowadzenie</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'cwiczenie1' else '' }} {{ 'active' if active_page == 'cwiczenie2' else '' }} {{ 'active' if active_page == 'cwiczenie3' else '' }} {{ 'active' if active_page == 'cwiczenie4' else '' }} {{ 'active' if active_page == 'cwiczenie5' else '' }} dropdown">
+            <a href="#exercise" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ćwiczenia na start</a>
+            <ul class="collapse list-unstyled" id="exercise">
+                <a href="{{ url_for('cwiczenie1') }}">Ćwiczenie 1</a>
+                <a href="{{ url_for('cwiczenie2') }}">Ćwiczenie 2</a>
+                <a href="{{ url_for('cwiczenie3') }}">Ćwiczenie 3</a>
+                <a href="{{ url_for('cwiczenie4') }}">Ćwiczenie 4</a>
+                <a href="{{ url_for('cwiczenie5') }}">Ćwiczenie 5</a>
+            </ul>
+        </li>
+        <!--
+    <li class="nav-item {{ 'active' if active_page == 'cwiczenie1' else '' }}">
+        <a class="nav-link" href="{{ url_for('cwiczenie1') }}">Ćwiczenie 1</a>
+    </li>
+
+    <li class="nav-item {{ 'active' if active_page == 'cwiczenie2' else '' }}">
+        <a class="nav-link" href="{{ url_for('cwiczenie2') }}">Ćwiczenie 2</a>
+    </li>
+
+    <li class="nav-item {{ 'active' if active_page == 'cwiczenie3' else '' }}">
+        <a class="nav-link" href="{{ url_for('cwiczenie3') }}">Ćwiczenie 3</a>
+    </li>
+
+    <li class="nav-item {{ 'active' if active_page == 'cwiczenie4' else '' }}">
+        <a class="nav-link" href="{{ url_for('cwiczenie4') }}">Ćwiczenie 4</a>
+    </li>
+
+    <li class="nav-item {{ 'active' if active_page == 'cwiczenie5' else '' }}">
+        <a class="nav-link disabled" href="{{ url_for('cwiczenie5') }}">Ćwiczenie 5</a>
+    </li>
+-->
+<!--
+        <li class="nav-item {{ 'active' if active_page == 'loci' else '' }}">
+            <a class="nav-link" href="{{ url_for('loci') }}">System loci</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'cwiczenie6' else '' }}">
+            <a class="nav-link" href="{{ url_for('cwiczenie6') }}">Ćwiczenie 6</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'skojarzenia' else '' }}">
+            <a class="nav-link" href="{{ url_for('skojarzenia') }}">Łańcuchowa metoda skojarzeń</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'cwiczenie7' else '' }}">
+            <a class="nav-link" href="{{ url_for('cwiczenie7') }}">Ćwiczenie 7</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'liczby' else '' }}">
+            <a class="nav-link" href="{{ url_for('liczby') }}">Metoda liczbowo-kształtowa</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'cwiczenie8' else '' }}">
+            <a class="nav-link" href="{{ url_for('cwiczenie8') }}">Ćwiczenie 8</a>
+        </li>
+-->
+        
+         <li class="nav-item {{ 'active' if active_page == 'loci' else '' }} {{ 'active' if active_page == 'cwiczenie6' else '' }} dropdown">
+            <a href="#loci" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">System loci</a>
+            <ul class="collapse list-unstyled" id="loci">
+                <a href="{{ url_for('loci') }}">Teoria</a>
+                <a href="{{ url_for('cwiczenie6') }}">Ćwiczenie</a>
+            </ul>
+        </li>
+        
+        <li class="nav-item {{ 'active' if active_page == 'skojarzenia' else '' }} {{ 'active' if active_page == 'cwiczenie7' else '' }} dropdown">
+            <a href="#skojarzenia" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Metoda skojarzeń</a>
+            <ul class="collapse list-unstyled" id="skojarzenia">
+                <a href="{{ url_for('skojarzenia') }}">Teoria</a>
+                <a href="{{ url_for('cwiczenie7') }}">Ćwiczenie</a>
+            </ul>
+        </li>
+        
+       
+        <li class="nav-item {{ 'active' if active_page == 'liczby' else '' }} {{ 'active' if active_page == 'cwiczenie8' else '' }} dropdown">
+            <a href="#liczby" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Metoda liczbowa</a>
+            <ul class="collapse list-unstyled" id="liczby">
+                <a href="{{ url_for('liczby') }}">Teoria</a>
+                <a href="{{ url_for('cwiczenie8') }}">Ćwiczenie</a>
+            </ul>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'grey' else '' }}">
+            <a class="nav-link" href="{{ url_for('grey') }}">System Grey'a</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'mapy' else '' }}">
+            <a class="nav-link" href="{{ url_for('mapy') }}">Mapy poznawcze</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'slowka' else '' }}">
+            <a class="nav-link" href="{{ url_for('slowka') }}">Słówka obcojęzyczne</a>
+        </li>
+
+        <li class="nav-item {{ 'active' if active_page == 'akronimy' else '' }}">
+            <a class="nav-link" href="{{ url_for('akronimy') }}">Akronimy</a>
+        </li>
+
+
+
+
+    </ul>
+</nav>
+
+ 
+
+
+{% endblock %}
+

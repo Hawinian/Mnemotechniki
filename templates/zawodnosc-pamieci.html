@@ -1,0 +1,44 @@
+{% extends 'basep.html' %}
+{% set active_menu = "pamiec" %}
+{% set active_page = "zawodnosc_pamieci" %}
+{% block content %}
+
+<h3>Zawodność pamięci</h3>
+<p>Zdarza się, że nasza pamięć nie działa w sposób perfekcyjny. Znane są przypadki, gdy świadek jakiegoś zdarzenia zapamiętał całkiem co innego niż wydarzyło się w rzeczywistości. Mimo tego, że widział to na własne oczy! Czasami jesteśmy przekonani, że coś się wydarzyło mimo tego, że nie miało to miejsca. Natomiast niektórych ludzi dotyka choroba uniemożliwiająca zapamiętanie nowych informacji. Dlaczego tak się dzieje?</p>
+
+<h5>Amnezja</h5>
+<p>Amnezja jest czasowym lub trwałym zaburzeniem jednego bądź wielu systemów pamięciowych. Podstawowe objawy amnezji to trudności w zapamiętywaniu i odpamiętywaniu informacji. Jej przyczyną może być:</p>
+<ul>
+    <li>uraz głowy,</li>
+    <li>udar,</li>
+    <li>infekcja,</li>
+    <li>działanie toksyn,</li>
+    <li>proces starzenia się.</li>
+</ul>
+<p> Możemy wyróżnić dwa typy amnezji: następczą i wsteczną. Amnezja następcza uniemożliwia lub utrudnia zapmiętywanie nowych informacji, natomiast amnezja wsteczna ogranicza umiejętność odpamiętywania informacji, które zostały nabyte przed czynnikiem wywołującym amnezję.</p>
+
+<h5>Pamięć naocznych świadków</h5>
+<p>W nauce istenieje nurt nazywany psychologią zeznań świadków, który zajmuje się badaniem oświadczeń składanych przez uczestników wydarzeń w sprawach sądowych. Najbardziej znaną badaczką tego nurtu jest Elizabeth Lotus, która od wielu lat bada ten temat.</p>
+
+<p>Lotus rozróżnia dwa czynniki, które mogą wpłynąć na wiarygodność zeznań:</p>
+<ul>
+    <li><b>Stan emocjonalny świadka</b>. Podczas szczególnych wydarzeń świadkom towarzyszą silne emocje. Powodują one wybiórcze zapamiętywanie zdarzeń. Jedne wydarzenia zapamiętują bardzo dobrze, natomiast inne słabo. </li>
+    <li><b>Pamięć źródła informacji</b>. Dotyczy ona kontekstu nabywania informacji. Świadek może się mylić to co widział, z tym co sugerowano mu, że mógł widzieć (technika skuteczna przy manipulacji stosowanej przez policję). Dowiedziono, że im wyższa wiarygodność źródła danej informacji, tym silniejszy efekt dezinformacji. Pamięć źródła jest znacznie słabsza u osób starszych. Są one dużo podatniejsze na potencjalną manipulację poprzez zadawanie zmyślnych pytań.</li>
+</ul>
+
+<p>W 1974 Loftus oraz Palmer przeprowadziły badania, podczas których pokazano film przedstawiający wypadek drogowy. Badanych podzielono na trzy grupy:</p>
+<ul>
+    <li>Grupa pierwsza, której zadano pytanie &bdquo;Jaka była prędkość w momencie roztrzaskania się (<i>smash</i>) samochodów?&rdquo;</li>
+    <li>Grupa druga, której zadano pytanie &bdquo;Jaka była prędkość w momencie zderzenia się (<i>hit</i>) samochodów?&rdquo;</li>
+    <li>Grupa trzecia (kontrolna), której nie zadano pytań na temat prędkości.</li>
+</ul>
+<p>W dalszej części badania poproszono każdego uczestnika o oszacowanie prędkości z jaką jechały samochody. Grupa pierwsza szacowała prędkość na 66 km/godz., natomiast grupa druga na 55 km/godz. Po tygodniu zapytano wszystkie grupy, czy na miejscu wypadków było widoczne rozbite szkło. Na to pytanie twierdząco odpowiedziało 32% osób z pierwszej grupy, 14% z drugiej grupy oraz 12% z grupy kontrolnej. Na miejscu wypadku żadnego szkła jednak nie było.</p>
+
+<p>Uzyskany wynik badania autorki tłumaczyły użyciem słowa "roztrzaskać się". Zawarta w nim sugestia, że wypadek był znacznie poważniejszy niż to co widzieli badani wpłynęła na ich postrzeganie tamtych wydarzeń. Przez to częściej wyciągali oni fałszywy wniosek o obecności szkła na miejscu zdarzenia. W tym przypadku nastąpiło zjawisko nazywane <b>efektem dezinformacji</b>. Jest to zjawisko modyfikacji przywołań pamięciowych, wywołanych błędną informacją wprowadzoną do pamięci.
+</p>
+
+<h5>Fałszywe wspomnienia</h5>
+<p>Badaniem, które zapoczątkowało testowanie pamięci fałszywych wspomnień niewątpliwie jest eksperyment z 1959 przeprowadzony przez Deese'a. Polegał on na prezentacji listy, zawierającej słowa powiązane znaczeniowo ze słowem krytycznym, które samo nie występowało jednak na liście. </p>
+<p>Przykładowa lista mogła wyglądać tak: łóżko, odpoczywać, budzić się, zmęczony, marzenie senne, drzemka, spokój, ziewać, senny. Brakującym słowem krytycznym jest oczywiście sen. Po odczytaniu takiej listy nawet 44% badanych twierdziło, że pamięta dane słowo krytyczne występujące w liście. Zależnie od tego jak silnie jest znaczeniowo powiązane słowo krytyczne ze słowami z listy wyniki badania wahają się pomiędzy 0%, a 44%</p>
+
+{% endblock %}

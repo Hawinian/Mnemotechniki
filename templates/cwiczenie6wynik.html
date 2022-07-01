@@ -1,0 +1,112 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie6" %}
+{% block content %}
+
+
+<h4>Twój wynik to: {{ wynik }}</h4>
+
+<div class="row justify-content-center">
+    {% if rezultat == 'bad' %}
+    <p>Wynik pomiędzy <b>0-4</b> jest słaby. Powinienień jeszcze trochę poćwiczyć.</p>
+    {% endif %}
+
+    {% if rezultat == 'medium' %}
+    <p>Wynik pomiędzy <b>5-8</b> jest dobry. Ale wciąż pozostaje sporo miejsca na poprawę!</p>
+    {% endif %}
+
+    {% if rezultat == 'good' %}
+    <p>Wynik pomiędzy <b>9-12</b> jest dobry. Wciąż jednak możesz się poprawić!</p>
+    {% endif %}
+
+    {% if rezultat == 'very-good' %}
+    <p>Wynik pomiędzy <b>13-15</b> jest znakomity. Świetnie sobie poradziłeś z tym ćwiczeniem!</p>
+    {% endif %}
+</div>
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Numer</th>
+            <th scope="col">Prawidłowa odpowiedź</th>
+            <th scope="col">Twoja odpowiedź</th>
+        </tr>
+    </thead>
+    <tr scope="row">
+        <td>1</td>
+        <td>czarownica</td>
+        <td id="{{ odpowiedzi['1'] }}">{{ dane['jeden'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>2</td>
+        <td>parafia</td>
+        <td id="{{ odpowiedzi['2'] }}">{{ dane['dwa'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>3</td>
+        <td>księgowy</td>
+        <td id="{{ odpowiedzi['3'] }}">{{ dane['trzy'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>4</td>
+        <td>wiadomość</td>
+        <td id="{{ odpowiedzi['4'] }}">{{ dane['cztery'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>5</td>
+        <td>Śpiąca Królewna</td>
+        <td id="{{ odpowiedzi['5'] }}">{{ dane['piec'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>6</td>
+        <td>plaster</td>
+        <td id="{{ odpowiedzi['6'] }}">{{ dane['szesc'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>7</td>
+        <td>deskorolka</td>
+        <td id="{{ odpowiedzi['7'] }}">{{ dane['siedem'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>8</td>
+        <td>krytyk</td>
+        <td id="{{ odpowiedzi['8'] }}">{{ dane['osiem'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>9</td>
+        <td>plac zabaw</td>
+        <td id="{{ odpowiedzi['9'] }}">{{ dane['dziewiec'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>10</td>
+        <td>piosenka</td>
+        <td id="{{ odpowiedzi['10'] }}">{{ dane['dziesiec'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>11</td>
+        <td>zdrajca</td>
+        <td id="{{ odpowiedzi['11'] }}">{{ dane['jedenascie'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>12</td>
+        <td>matematyka</td>
+        <td id="{{ odpowiedzi['12'] }}">{{ dane['dwanascie'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>13</td>
+        <td>Bielsko-Biała</td>
+        <td id="{{ odpowiedzi['13'] }}">{{ dane['trzynascie'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>14</td>
+        <td>stypendium</td>
+        <td id="{{ odpowiedzi['14'] }}">{{ dane['czternascie'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>15</td>
+        <td>gra komputerowa</td>
+        <td id="{{ odpowiedzi['15'] }}">{{ dane['pietnascie'] }}</td>
+    </tr>
+</table>
+
+{% endblock %}

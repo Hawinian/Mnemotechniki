@@ -1,0 +1,24 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie8" %}
+{% block content %}
+
+<h3>Ćwiczenie 8</h3>
+<ul>
+    <li><b>2</b> - domek letniskowy</li>
+    <li><b>4</b> - urodziny</li>
+    <li><b>5</b> - wdowa</li>
+    <li><b>1</b> - teczka</li>
+    <li><b>3</b> - parkometr</li>
+    <li><b>7</b> - masło</li>
+    <li><b>9</b> - puszka</li>
+    <li><b>8</b> - marchewka</li>
+    <li><b>10</b> - bieda</li>
+    <li><b>6</b> - moneta</li>
+</ul>
+
+
+<a href="{{ url_for('cwiczenie8formularz') }}" class="btn btn-danger btn-lg btn-block" role="button">Podaj rozwiązanie</a>
+
+
+{% endblock %}

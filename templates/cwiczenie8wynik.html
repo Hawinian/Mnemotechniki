@@ -1,0 +1,83 @@
+{% extends 'basem.html' %}
+{% set active_menu = "mnemotechniki" %}
+{% set active_page = "cwiczenie8" %}
+{% block content %}
+
+
+<h4>Twój wynik to: {{ wynik }}</h4>
+<div class="row justify-content-center">
+    {% if rezultat == 'bad' %}
+    <p>Wynik pomiędzy <b>0-3</b> jest słaby. Powinienień jeszcze trochę poćwiczyć.</p>
+    {% endif %}
+
+    {% if rezultat == 'medium' %}
+    <p>Wynik pomiędzy <b>4-7</b> jest całkiem niezły. Ale wciąż pozostaje miejsce na poprawę!</p>
+    {% endif %}
+
+    {% if rezultat == 'good' %}
+    <p>Wynik pomiędzy <b>8-10</b> jest znakomity. Świetnie sobie poradziłeś z tym ćwiczeniem!</p>
+    {% endif %}
+</div>
+
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Numer</th>
+            <th scope="col">Prawidłowa odpowiedź</th>
+            <th scope="col">Twoja odpowiedź</th>
+        </tr>
+    </thead>
+    <tr scope="row">
+        <td>1</td>
+        <td>teczka</td>
+        <td id="{{ odpowiedzi['1'] }}">{{ dane['jeden'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>2</td>
+        <td>domek letniskowy</td>
+        <td id="{{ odpowiedzi['2'] }}">{{ dane['dwa'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>3</td>
+        <td>parkometr</td>
+        <td id="{{ odpowiedzi['3'] }}">{{ dane['trzy'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>4</td>
+        <td>urodziny</td>
+        <td id="{{ odpowiedzi['4'] }}">{{ dane['cztery'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>5</td>
+        <td>wodwa</td>
+        <td id="{{ odpowiedzi['5'] }}">{{ dane['piec'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>6</td>
+        <td>moneta</td>
+        <td id="{{ odpowiedzi['6'] }}">{{ dane['szesc'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>7</td>
+        <td>masło</td>
+        <td id="{{ odpowiedzi['7'] }}">{{ dane['siedem'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>8</td>
+        <td>marchewka</td>
+        <td id="{{ odpowiedzi['8'] }}">{{ dane['osiem'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>9</td>
+        <td>puszka</td>
+        <td id="{{ odpowiedzi['9'] }}">{{ dane['dziewiec'] }}</td>
+    </tr>
+    <tr scope="row">
+        <td>10</td>
+        <td>bieda</td>
+        <td id="{{ odpowiedzi['10'] }}">{{ dane['dziesiec'] }}</td>
+    </tr>
+</table>
+
+{% endblock %}
